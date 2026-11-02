@@ -17,6 +17,7 @@ def calculate_force(mass, acceleration):
 # 3. Density = Mass / Volume
 def calculate_density(mass, volume):
     if volume == 0:
+        raise ValueError("Volume cannot be zero.")
     return mass / volume
 
 
